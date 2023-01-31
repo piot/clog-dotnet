@@ -1,0 +1,13 @@
+{
+  "name": "com.outbreakstudios.clog.base",
+  "version": "0.0.1",
+  "description": "Simple log library based on clog",
+  "displayName": "Outbreak Studios - Clog",
+  "unity": "2021.3",
+  "author": {
+    "name": "Outbreak Studios",
+    "email": "info@outbreakstudios.com",
+    "url": "https://outbreakstudios.com"
+  },
+  "license": "MIT"
+}
