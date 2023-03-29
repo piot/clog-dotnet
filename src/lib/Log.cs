@@ -21,9 +21,7 @@ namespace Piot.Clog
             this.prefix = prefix;
         }
 
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void Info(string message)
         {
@@ -35,9 +33,7 @@ namespace Piot.Clog
             target.Log(LogLevel.Info, prefix, message, Array.Empty<object>());
         }
 
-        #if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+        
 
         public void Info<T>(string message, T arg) where T : notnull
         {
@@ -52,9 +48,7 @@ namespace Piot.Clog
             });
         }
 
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
         public void Info<T0, T1>(string message, T0 arg0, T1 arg1) where T0 : notnull where T1 : notnull
         {
             if (LogLevel > LogLevel.Info)
@@ -67,9 +61,7 @@ namespace Piot.Clog
                 arg0, arg1
             });
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void Info<T0, T1, T2>(string message, T0 arg0, T1 arg1, T2 arg2)
             where T0 : notnull where T1 : notnull where T2 : notnull
@@ -84,9 +76,7 @@ namespace Piot.Clog
                 arg0, arg1, arg2
             });
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void Info(string message, params object[] args)
         {
@@ -98,9 +88,7 @@ namespace Piot.Clog
             target.Log(LogLevel.Info, prefix, message, args);
         }
 
-        #if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+        
 
         public void Warn(string message)
         {
@@ -111,9 +99,7 @@ namespace Piot.Clog
 
             target.Log(LogLevel.Warning, prefix, message, Array.Empty<object>());
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void Warn<T>(string message, T arg) where T : notnull
         {
@@ -128,9 +114,7 @@ namespace Piot.Clog
             });
         }
 
-        #if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+        
 
         public void Warn<T0, T1>(string message, T0 arg0, T1 arg1) where T0 : notnull where T1 : notnull
         {
@@ -145,9 +129,7 @@ namespace Piot.Clog
             });
         }
 
-        #if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+        
 
         public void Warn<T0, T1, T2>(string message, T0 arg0, T1 arg1, T2 arg2)
             where T0 : notnull where T1 : notnull where T2 : notnull
@@ -163,9 +145,7 @@ namespace Piot.Clog
             });
         }
 
-        #if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+        
 
         public void Warn(string message, params object[] args)
         {
@@ -176,9 +156,7 @@ namespace Piot.Clog
 
             target.Log(LogLevel.Warning, prefix, message, args);
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void Debug(string message)
         {
@@ -189,9 +167,7 @@ namespace Piot.Clog
 
             target.Log(LogLevel.Debug, prefix, message, Array.Empty<object>());
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void Debug<T>(string message, T arg) where T : notnull
         {
@@ -205,9 +181,7 @@ namespace Piot.Clog
                 arg
             });
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void Debug<T0, T1>(string message, T0 arg0, T1 arg1) where T0 : notnull where T1 : notnull
         {
@@ -221,9 +195,7 @@ namespace Piot.Clog
                 arg0, arg1
             });
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void Debug<T0, T1, T2>(string message, T0 arg0, T1 arg1, T2 arg2)
             where T0 : notnull where T1 : notnull where T2 : notnull
@@ -239,9 +211,7 @@ namespace Piot.Clog
             });
         }
 
-        #if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+        
 
         public void Debug(string message, params object[] args)
         {
@@ -252,9 +222,7 @@ namespace Piot.Clog
 
             target.Log(LogLevel.Debug, prefix, message, args);
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void DebugLowLevel(string message)
         {
@@ -265,9 +233,7 @@ namespace Piot.Clog
 
             target.Log(LogLevel.LowLevel, prefix, message, Array.Empty<object>());
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void DebugLowLevel<T>(string message, T arg) where T : notnull
         {
@@ -281,9 +247,7 @@ namespace Piot.Clog
                 arg
             });
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void DebugLowLevel<T0, T1>(string message, T0 arg0, T1 arg1) where T0 : notnull where T1 : notnull
         {
@@ -297,9 +261,7 @@ namespace Piot.Clog
                 arg0, arg1
             });
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void DebugLowLevel<T0, T1, T2>(string message, T0 arg0, T1 arg1, T2 arg2)
             where T0 : notnull where T1 : notnull where T2 : notnull
@@ -314,9 +276,7 @@ namespace Piot.Clog
                 arg0, arg1, arg2
             });
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void DebugLowLevel(string message, params object[] args)
         {
@@ -327,10 +287,6 @@ namespace Piot.Clog
 
             target.Log(LogLevel.LowLevel, prefix, message, args);
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
-
 
         public void Notice(string message)
         {
@@ -341,9 +297,6 @@ namespace Piot.Clog
 
             target.Log(LogLevel.Notice, prefix, message, Array.Empty<object>());
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
 
         public void Notice<T>(string message, T arg) where T : notnull
         {
@@ -357,9 +310,7 @@ namespace Piot.Clog
                 arg
             });
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void Notice<T0, T1>(string message, T0 arg0, T1 arg1) where T0 : notnull where T1 : notnull
         {
@@ -373,9 +324,7 @@ namespace Piot.Clog
                 arg0, arg1
             });
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void Notice<T0, T1, T2>(string message, T0 arg0, T1 arg1, T2 arg2)
             where T0 : notnull where T1 : notnull where T2 : notnull
@@ -390,9 +339,7 @@ namespace Piot.Clog
                 arg0, arg1, arg2
             });
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void Notice(string message, params object[] args)
         {
@@ -403,9 +350,7 @@ namespace Piot.Clog
 
             target.Log(LogLevel.Notice, prefix, message, args);
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
 
         public void Error(string message)
@@ -417,9 +362,7 @@ namespace Piot.Clog
 
             target.Log(LogLevel.Error, prefix, message, Array.Empty<object>());
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void Error<T>(string message, T arg) where T : notnull
         {
@@ -433,9 +376,7 @@ namespace Piot.Clog
                 arg
             });
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void Error<T0, T1>(string message, T0 arg0, T1 arg1) where T0 : notnull where T1 : notnull
         {
@@ -449,9 +390,7 @@ namespace Piot.Clog
                 arg0, arg1
             });
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void Error<T0, T1, T2>(string message, T0 arg0, T1 arg1, T2 arg2)
             where T0 : notnull where T1 : notnull where T2 : notnull
@@ -466,9 +405,7 @@ namespace Piot.Clog
                 arg0, arg1, arg2
             });
         }
-#if UNITY_2022_1_OR_NEWER
-        [HideInStackTrace(true)]
-#endif
+
 
         public void Error(string message, params object[] args)
         {
