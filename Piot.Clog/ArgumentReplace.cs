@@ -3,6 +3,7 @@
  *  Licensed under the MIT License. See LICENSE in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
+using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
@@ -67,6 +68,10 @@ namespace Piot.Clog
                 fieldName = parts[0];
 
                 var formatting = parts.Length > 1 ? parts[1] : "";
+                if(index >= arguments.Length)
+                {
+                    throw new Exception($"log parsing went wrong. needed argument at index {index}, but only {arguments.Length} arguments were provided.");
+                }
 
                 var valueObject = arguments[index];
                 var value = Utils.ArgumentValueToString(valueObject);
